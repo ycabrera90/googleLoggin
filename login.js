@@ -18,6 +18,7 @@ function onnSignIn(googleUser) {
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
     
+    window.location="backend.html";
   }
 
 
