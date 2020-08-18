@@ -6,10 +6,13 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="252563436571-ffervsr5jh5e9hj0fk2vqi7g6cr414re.apps.googleusercontent.com">
 
-    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-    <script src="platform.js"></script>
 
+    <!--
+      La siguiente linea es el js de google que se encargan de todo lo relacionado al loggin. Descargar el js y usarlo local NO GARANTIZA que se pueda ejecutar el HTML de forma local y salga el boton de google.
+    -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
+    <!---->
     <script src="login.js"></script>
     
 
@@ -23,14 +26,7 @@
 
     <a href="#" onclick="signOut();">Sign out</a>
     
-    <script>
-    function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-        console.log('User signed out.');
-        });
-    }
-</script>
+    
   </body>
 
 </html>
