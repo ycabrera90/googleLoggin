@@ -3,7 +3,7 @@
 
 
 
-function onnSignIn(googleUser) {
+function onSignIn(googleUser) {
     // Cuando se llama a esta función es que el usario logró logearse con google para entrar
     // Datos que se pueden obtener del cliente
     var profile = googleUser.getBasicProfile();
